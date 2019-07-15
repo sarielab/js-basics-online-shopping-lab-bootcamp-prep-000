@@ -44,5 +44,5 @@ function placeOrder(cardNumber) {
   // write your code here
   const totalCost = total()
   cart = []
-  return `Your total cost is $${totalCost}, will be charged to the card ${cardNumber}.`
+  return `Your total cost is $${totalCost}, which will be charged to the card ${cardNumber}.`
 }
