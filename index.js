@@ -27,6 +27,8 @@ function viewCart() {
 }
 
 function total() {
+  const sum = cart.reduce((carry, curr) => +carry + +curr.itemPrice, 0)
+  return sum
   // write your code here
 }
 
