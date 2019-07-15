@@ -197,7 +197,7 @@ function total() {
 function removeFromCart(item) {
   const location = cart.findIndex((ca) => ca.itemName === item)
   if (location === -1) return 'That item is not in your cart.'
-  carts = carts.splice(location, 1)
+  cart.splice(location, 1)
   // write your code here
 }
 
