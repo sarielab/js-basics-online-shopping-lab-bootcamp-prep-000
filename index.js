@@ -17,6 +17,12 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  const cartlen = cart.length
+  if (cartlen === 0) return 'Your shopping cart is empty.'
+  
+  const cartlenmin1 = cartlen - 1  
+  const items = cart.map((c, idx) => `${idx === cartlenmin1 ? ' and ':''}${c.itemName} at ${c.itemPrice}`).join(', ')
+  return `In your cart, you have ${items}.`
   // write your code here
 }
 
