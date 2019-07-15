@@ -10,6 +10,7 @@ function setCart(c) {
 }
 
 function addToCart(item) {
+  const price = Math.floor(Math.random())
   cart.push(item)
  // write your code here
 }
